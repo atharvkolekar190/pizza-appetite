@@ -1,0 +1,112 @@
+.add-to-cart-button {
+    background: linear-gradient(135deg, #ff7f50, #e63946);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.add-to-cart-button:hover {
+    box-shadow: 0 12px 20px rgba(255, 127, 80, 0.4);
+    transform: translateY(-3px);
+}
+
+.add-to-cart-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Glow Effect */
+.add-to-cart-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 127, 80, 0.2), transparent);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: pulse 1.5s infinite;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Ingredient Pop-Out Effect */
+.add-to-cart-button::after {
+    content: "🍕";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 24px;
+    opacity: 0;
+    transform: rotate(0deg) scale(0);
+    animation: pop 0.8s ease-in-out forwards;
+}
+
+@keyframes pop {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: rotate(45deg) scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(90deg) scale(0);
+    }
+}
+
+.popup-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100; /* Higher than the Navbar */
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInOut 3s ease-in-out; /* Optional fade-in-out effect */
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+  
+  

@@ -1,0 +1,240 @@
+[
+	{
+        "name": "Margherita",
+        "category": "veg",
+        "baseOptions": [
+            "smallSmall",
+            "small_Medium",
+            "medium_Medium",
+            "medium_Large",
+            "large"
+        ],
+        "sauces": [
+            "Tomato",
+            "Barbecue",
+            "Pesto",
+            "Garlic Parmesan",
+            "Cheese"
+        ],
+        "cheeseType": "Mozzarella",
+        "image": "https://www.dominos.co.in/files/items/Margherit.jpg",
+        "description": "A classic delight with 100% mozzarella cheese and tangy tomato sauce.",
+        "price": {
+            "smallSmall": 249,
+            "small_Medium": 269,
+            "medium_Medium": 349,
+            "medium_Large": 399,
+            "large": 449
+        }
+    },
+    {
+        "name": "Farmhouse",
+        "category": "veg",
+        "baseOptions": [
+            "smallSmall",
+            "small_Medium",
+            "medium_Medium",
+            "medium_Large",
+            "large"
+        ],
+        "sauces": [
+            "Tomato",
+            "Barbecue",
+            "Pesto",
+            "Garlic Parmesan",
+            "Cheese"
+        ],
+        "cheeseType": "Mozzarella",
+        "image": "https://www.dominos.co.in/files/items/Farmhouse.jpg",
+        "description": "Loaded with fresh tomatoes, onions, capsicum, and mushrooms.",
+        "price": {
+            "smallSmall": 299,
+            "small_Medium": 319,
+            "medium_Medium": 399,
+            "medium_Large": 449,
+            "large": 499
+        }
+    },
+    {   
+        "name": "Peppy Paneer",
+        "category": "veg",
+        "baseOptions": [
+            "smallSmall",
+            "small_Medium",
+            "medium_Medium",
+            "medium_Large",
+            "large"
+        ],
+        "sauces": [
+            "Tomato",
+            "Barbecue",
+            "Pesto",
+            "Garlic Parmesan",
+            "Cheese"
+        ],
+        "cheeseType": "Mozzarella",
+        "image": "https://www.dominos.co.in/files/items/Peppy_Paneer.jpg",
+        "description": "A zesty pizza with spicy paneer, onion, and capsicum.",
+        "price": {
+            "smallSmall": 289,
+            "small_Medium": 309,
+            "medium_Medium": 389,
+            "medium_Large": 439,
+            "large": 489
+        }
+    },
+    {
+        "name": "Non-Veg Supreme",
+        "category": "non-veg",
+        "baseOptions": [
+            "smallSmall",
+            "small_Medium",
+            "medium_Medium",
+            "medium_Large",
+            "large"
+        ],
+        "sauces": [
+            "Tomato",
+            "Barbecue",
+            "Garlic Parmesan",
+            "Cheese"
+        ],
+        "cheeseType": "Mozzarella",
+        "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(13).png",
+        "description": "A hearty pizza with chicken, pepperoni, and sausage.",
+        "price": {
+            "smallSmall": 349,
+            "small_Medium": 369,
+            "medium_Medium": 449,
+            "medium_Large": 499,
+            "large": 549
+        }
+    },
+    {
+        "name": "Indi Chicken Tikka",
+        "category": "non-veg",
+        "baseOptions": [
+            "smallSmall",
+            "small_Medium",
+            "medium_Medium",
+            "medium_Large",
+            "large"
+        ],
+        "sauces": [
+            "Tomato",
+            "Barbecue",
+            "Garlic Parmesan",
+            "Cheese"
+        ],
+        "cheeseType": "Mozzarella",
+        "image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(18).png",
+        "description": "A delicious pizza with tender chicken tikka pieces and creamy sauce.",
+        "price": {
+            "smallSmall": 329,
+            "small_Medium": 349,
+            "medium_Medium": 429,
+            "medium_Large": 479,
+            "large": 529
+        }
+    },
+ {"name": "Veggie Supreme",
+        "category": "veg",
+        "baseOptions": [
+            "smallSmall",
+            "small_Medium",
+            "medium_Medium",
+            "medium_Large",
+            "large"
+        ],
+        "sauces": [
+            "Tomato",
+            "Pesto",
+            "Cheese"
+        ],
+        "cheeseType": "Mozzarella",
+        "image": "https://www.dominos.co.in/files/items/Veggie_Supreme.jpg",
+        "description": "A loaded pizza with bell peppers, olives, onions, and sweet corn.",
+        "price": {
+            "smallSmall": 299,
+            "small_Medium": 319,
+            "medium_Medium": 399,
+            "medium_Large": 449,
+            "large": 499
+        }
+    },
+    {
+        "name": "Cheese Burst Deluxe",
+        "category": "veg",
+        "baseOptions": [
+            "smallSmall",
+            "small_Medium",
+            "medium_Medium",
+            "medium_Large",
+            "large"
+        ],
+        "sauces": [
+            "Tomato",
+            "Garlic Parmesan"
+        ],
+        "cheeseType": "Extra Mozzarella",
+        "image": "https://www.dominos.co.in/files/items/Cheese_Burst.jpg",
+        "description": "A super cheesy pizza for the ultimate cheese lovers.",
+        "price": {
+            "smallSmall": 319,
+            "small_Medium": 339,
+            "medium_Medium": 419,
+            "medium_Large": 469,
+            "large": 529
+        }
+    },
+    {
+        "name": "BBQ Chicken Feast",
+        "category": "non-veg",
+        "baseOptions": [
+            "smallSmall",
+            "small_Medium",
+            "medium_Medium",
+            "medium_Large",
+            "large"
+        ],
+        "sauces": [
+            "Barbecue",
+            "Tomato"
+        ],
+        "cheeseType": "Mozzarella",
+        "image": "https://www.dominos.co.in/files/items/BBQ_Chicken.jpg",
+        "description": "A smoky delight with grilled chicken, onions, and BBQ sauce.",
+        "price": {
+            "smallSmall": 349,
+            "small_Medium": 369,
+            "medium_Medium": 449,
+            "medium_Large": 499,
+            "large": 549
+        }
+    },
+    {
+        "name": "Peri Peri Paneer",
+        "category": "veg",
+        "baseOptions": [
+            "smallSmall",
+            "small_Medium",
+            "medium_Medium",
+            "medium_Large",
+            "large"
+        ],
+        "sauces": [
+            "Tomato",
+            "Peri Peri"
+        ],
+        "cheeseType": "Mozzarella",
+        "image": "https://www.dominos.co.in/files/items/Peri_Peri_Paneer.jpg",
+        "description": "Spicy paneer chunks topped with a tangy peri-peri sauce.",
+        "price": {
+            "smallSmall": 289,
+            "small_Medium": 309,
+            "medium_Medium": 389,
+            "medium_Large": 439,
+            "large": 489
+        }
+    }
+]

@@ -6,6 +6,8 @@ import Footer from './Components/Footer'
 import LoginPage from './screens/Login'
 import SignUpPage from './screens/Signup'
 import Cart from './screens/cartScreens'
+import OrdersScreen from './screens/OrdersScreen'
+import Adminscreen from './screens/Adminscreen'
 function App() {
   
 
@@ -13,11 +15,13 @@ function App() {
     <>
       <Navbar></Navbar>
       <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path='/login' element={<LoginPage/>}/>
-          <Route path="/cart" element={<Cart/>}/>
-          <Route path="/signup" element={<SignUpPage/>}/>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/menu" exact element={<Menu />} />
+          <Route path='/login' exact element={<LoginPage/>}/>
+          <Route path="/cart" exact element={<Cart/>}/>
+          <Route path="/orders" exact element={<OrdersScreen/>}/>
+          <Route path="/signup" exact element={<SignUpPage/>}/>
+          <Route path="/admin/*" element={<Adminscreen/>}/>
       </Routes>
       <Footer></Footer>
       

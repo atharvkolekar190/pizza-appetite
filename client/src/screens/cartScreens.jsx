@@ -3,6 +3,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
 import { deleteFromCart } from '../actions/cartActions';
 import Checkout from '../Components/Checkout';
+import { ToastContainer } from "react-toastify";  // Import ToastContainer
+import "react-toastify/dist/ReactToastify.css";    // Import Toastify CSS
+
 function CartScreens() {
     const dispatch = useDispatch();
     const cartstate = useSelector(state => state.cartReducer);
@@ -13,13 +16,15 @@ function CartScreens() {
 
     return (
         <>
+            {/* ToastContainer to show toast messages */}
+            <ToastContainer /> 
+
             {/* Header Section */}
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 className="text-slate-950 text-center text-4xl font-extrabold mt-8 uppercase">
-                
                 My Cart
                 <motion.hr
                     initial={{ scaleX: 0 }}

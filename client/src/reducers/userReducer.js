@@ -21,14 +21,14 @@ export const signupUserReducer = (state = {}, action) => {
 export const loginReducer = (state = {}, action) => {
   switch (action.type) {
     case "USER_LOGIN_REQUEST":
-      return { loading: true };
+      return { loading: true }; // Set loading state when login is requested
     case "USER_LOGIN_SUCCESS":
-      return { loading: false, userInfo: action.payload };
-    case "USER_LOGIN_FAIL":
-      return { loading: false, error: action.error };
+      return { loading: false, userInfo: action.payload }; // Store user info on successful login
+    case "USER_LOGIN_FAILED":
+      return { loading: false, error: action.payload }; // Handle errors with payload
     case "USER_LOGOUT":
-      return { ...state, currentUser: null, cartItems: null };
+      return {}; // Reset state completely on logout
     default:
-      return state;
+      return state; // Return current state for unrelated actions
   }
 };

@@ -6,14 +6,15 @@ import { cartReducer } from './reducers/cartReducers';
 import { loginReducer, signupUserReducer } from './reducers/userReducer';
 import { loginUser } from './actions/userActions';
 import { placeOrder } from './actions/orderActions';
-import { placeOrderReducer } from './reducers/orderReducer';
+import { getUserOrdersReducer, placeOrderReducer } from './reducers/orderReducer';
 
 const finalReducers = combineReducers({
     getAllPizzasReducers, // ES6 shorthand for getAllPizzasReducers: getAllPizzasReducers
     cartReducer,
     signupUserReducer,
     loginReducer,
-    placeOrderReducer
+    placeOrderReducer,
+    getUserOrdersReducer
 });
 
 const cartItems=localStorage.getItem('cartItems')?JSON.parse(localStorage.getItem('cartItems')):[]

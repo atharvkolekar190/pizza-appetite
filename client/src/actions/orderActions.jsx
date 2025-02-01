@@ -1,5 +1,18 @@
 import axios from "axios";
 
+export const getAllOrders=()=>async dispatch=>{
+  dispatch({type:"GET_ORDER_REQUEST"});
+
+  try {
+      const response = await axios.get('/api/orders/getallorders');
+      console.log(response.data)
+      dispatch({type:"GET_ORDER_SUCCESS",payload:response.data});
+  } catch (error) {
+      dispatch({type:"GET_ORDER_FAILED",payload:error});
+  }
+
+}
+
 export const placeOrder = (token, subtotal) => async (dispatch, getState) => {
   dispatch({ type: "PLACE_ORDER_REQUEST" });
 
@@ -41,3 +54,24 @@ export const getUserOrders = () => async (dispatch, getState) => {
     dispatch({ type: "GET_USER_ORDERS_FAILED", payload: error.message });
   }
 };
+
+export const deliverOrder = (orderid) => async (dispatch) => {
+  dispatch({ type: "GET_ALLORDERS_REQUEST" });
+
+  try {
+    const response = await axios.post("/api/orders/deliverorder", { orderid });
+    alert("Order delivered successfully");
+
+    const ordersResponse = await axios.get("/api/orders/getallorders");
+    dispatch({ type: "GET_ALLORDERS_SUCCESS", payload: ordersResponse.data });
+    window.location.reload();
+  } catch (error) {
+    console.error("Error delivering order:", error);
+    dispatch({
+      type: "GET_ALLORDERS_FAILED",
+      payload: error.response?.data?.message || error.message,
+    });
+  }
+};
+
+

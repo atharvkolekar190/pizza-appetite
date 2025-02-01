@@ -14,8 +14,6 @@ const userSchema = mongoose.Schema(
     }
 );
 module.exports=mongoose.model('users',userSchema)
-
-
 // const userSchema=mongoose.Schema({
 //     name:{type:String,require},
 //     email:{type:String,require},

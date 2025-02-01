@@ -4,6 +4,8 @@ import { getUserOrders } from "../actions/orderActions";
 import { toast, ToastContainer } from "react-toastify";
 import { FaCheckCircle, FaClock } from "react-icons/fa"; // Icons for delivered and in progress
 import "./screenscss.css";
+import Loading from "../Components/Loading";
+import Error from "../Components/Error";
 
 function OrdersScreen() {
   const dispatch = useDispatch();
@@ -76,13 +78,14 @@ function OrdersScreen() {
 
       {loading && (
         <div className="flex justify-center items-center">
-          <div className="loader"></div>
+          <Loading name="Loading your orders"/>
         </div>
       )}
 
       {error && (
         <div className="text-red-500 text-xl text-center bg-red-100 p-4 rounded-lg shadow-lg mt-4">
           <strong>Error:</strong> {error}
+          <Error title="Something Went Wrong" desc="Please Try Again Later!!"></Error>
         </div>
       )}
 

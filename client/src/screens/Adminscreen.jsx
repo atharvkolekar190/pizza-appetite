@@ -5,7 +5,7 @@ import Userslist from './Userslist';
 import Pizzaslist from './Pizzaslist';
 import Addpizzainfo from './Addpizzainfo';
 import Orderslist from './Orderslist';
-
+import { ToastContainer } from 'react-toastify';
 export default function Adminscreen() {
   const userState = useSelector(state => state.loginReducer);
   const currentUser = userState?.currentUser;
@@ -19,6 +19,7 @@ export default function Adminscreen() {
 
   return (
     <div className="m-2 text-center">
+      <ToastContainer/>
       <div className="text-center text-4xl my-5 p-4 font-serif font-bold border-b-4 border-slate-500 mx-10 shadow-black shadow-xl rounded-xl">
         ADMIN PANEL
       </div>

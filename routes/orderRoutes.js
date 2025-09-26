@@ -77,4 +77,13 @@ router.post("/placeorder", async (req, res) => {
   }
 });
 
+router.get("/getallorders",async(req,res)=>{
+  try {
+    const orders = await Order.find({}); 
+    res.send(orders); // Send the pizzas as a response
+} catch (error) {
+    return res.status(400).json({ message: error.message }); // Handle errors
+}
+});
+
 module.exports = router;

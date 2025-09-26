@@ -32,3 +32,16 @@ export const loginReducer = (state = {}, action) => {
       return state; // Return current state for unrelated actions
   }
 };
+
+export const getUsersReducer=(state={},action)=>{
+  switch (action.type) {
+    case 'GET_USERS_REQUEST':
+      return { ...state, loading: true };
+    case 'GET_USERS_SUCCESS':
+      return { users: action.payload, loading: false };
+    case 'GET_USERS_FAILED':
+      return { error: action.payload, loading: false };
+    default:
+      return state;
+  }
+}

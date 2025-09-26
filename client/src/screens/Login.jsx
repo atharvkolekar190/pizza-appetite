@@ -158,8 +158,7 @@
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-red-500 to-red-700 text-white font-bold py-2 px-4 rounded-lg hover:from-red-600 hover:to-red-800 transition-all duration-300"
-              >
+                className="w-full bg-gradient-to-r from-red-500 to-red-700 text-white font-bold py-2 px-4 rounded-lg hover:from-red-600 hover:to-red-800 transition-all duration-300">
                 Log In
               </button>
             </form>
@@ -181,5 +180,4 @@
       </div>
     );
   };
-
   export default LoginPage;

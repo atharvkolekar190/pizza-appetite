@@ -8,6 +8,7 @@ import SignUpPage from './screens/Signup'
 import Cart from './screens/cartScreens'
 import OrdersScreen from './screens/OrdersScreen'
 import Adminscreen from './screens/Adminscreen'
+import ForgotPassword from './screens/ForgotPassword'
 function App() {
   
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/menu" exact element={<Menu />} />
           <Route path='/login' exact element={<LoginPage/>}/>
+          <Route path='/forgot-password' exact element={<ForgotPassword/>}/>
           <Route path="/cart" exact element={<Cart/>}/>
           <Route path="/orders" exact element={<OrdersScreen/>}/>
           <Route path="/signup" exact element={<SignUpPage/>}/>

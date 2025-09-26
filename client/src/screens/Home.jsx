@@ -1,9 +1,28 @@
-  import React from 'react'
+  import React, { useEffect } from 'react'
   import ContactForm from '../Components/ContactForm'
   import PizzaAboutSection from '../Components/PizzaAboutSection';
   import './screenscss.css'
+  import { toast, ToastContainer } from "react-toastify";
+  import "react-toastify/dist/ReactToastify.css";
 
   const Home = () => {
+    useEffect(() => {
+      if (localStorage.getItem('currentUser')) {
+        const user = JSON.parse(localStorage.getItem('currentUser'));
+        if (user && user.isAdmin) {
+                  toast.success("Welcome back! Boss...", {
+                    autoClose: 3000,
+                    position: "top-center",
+                    theme: "colored",
+                  });
+              
+                  setTimeout(() => {
+                    window.location.href = "/admin";
+                }, 1000);
+            }
+          }
+    })
+    
     const backgroundStyle = {
       backgroundImage: "url('https://i.pinimg.com/236x/84/d9/cf/84d9cf05125bbefd5b443ee772e476b1.jpg')",
       backgroundRepeat: "no-repeat", // Ensure the background scales appropriately
